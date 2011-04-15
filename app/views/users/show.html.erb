@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h3><%= @user.name %></h3>
+<p> <%= image_tag @user.image.thumb.url %> </p>
+<p> <%= image_tag @user.image.normal.url %> </p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+
+<p> <%= image_tag @user.image.url, :style => 'max-width: 800px' %> </p>
+
